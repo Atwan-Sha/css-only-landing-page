@@ -1,0 +1,201 @@
+/* *FONTS */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+
+/* *MISC */
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+header, .hero, .quote, .call-to-action, footer, .flex-container {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    width: 1100px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 20px 0;
+}
+
+button:hover {
+    color:#1f2937;  
+}
+
+/* *HEADER */
+header {
+    height: 100px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+nav {
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav a:any-link {
+    color: #f9faf8; 
+}
+
+nav a:hover {
+    color: #3882f6
+}
+
+/* *HERO SECTION */
+.hero {
+    height: 500px;
+}
+
+.hero-copy {
+    width: 50%;
+    height: 250px;
+}
+
+.hero-copy h1 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 48px;
+    color: #f9faf8;
+    padding-right: 60px;
+}
+
+.hero-copy p {
+    font-size: 18px;
+    color: #e5e7eb;
+    padding-right: 100px;
+}
+
+.hero img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* *RANDOM_CONTENT SECTION */
+.random-content {
+    height: 500px;
+    text-align: center;
+    background-color: #f9faf8;
+    color: #1f2937;
+}
+
+.random-content h1 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 36px;
+    margin: 40px;
+}
+
+.random-content figure {
+    display: inline-block;
+    height: 250px;
+    width: 180px;
+    margin: 20px;
+}
+
+.random-content img {
+    height: 170px;
+    width: 170px;
+    border: solid 4px #3882f6;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.random-content figcaption {
+    font-size: 18px;
+    color: #1f2937;
+    margin: 5px;
+}
+
+/* *QUOTE SECTION */
+.quote {
+    height: 500px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote blockquote {
+    width: 790px;
+    font-family: 'Roboto-LightItalic', sans-serif;
+    font-size: 36px;
+}
+
+.quote cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 30px;
+}
+
+/* *CALL-TO-ACTION SECTION */
+.call-to-action {
+    height: 500px;
+    background-color: #f9faf8;
+    color: #f9faf8;
+}
+
+.call-to-action .flex-container {
+    height: 170px;
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+
+.cta-copy {
+    font-size: 24px;
+    margin-left: 100px;
+}
+
+.cta-copy p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.call-to-action button {
+    border: solid 2px #f9faf8;
+    margin-right: 100px;
+}
+
+.call-to-action button:hover {
+    border-color:#1f2937;
+}
+
+/* *FOOTER */
+footer {
+    height: 150px;
+    color: #e5e7eb;
+}
