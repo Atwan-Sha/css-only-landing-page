@@ -18,19 +18,20 @@
 * { 
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto-Regular', sans-serif;
 }
 
-header, .hero, .quote, .call-to-action, footer, .flex-container {
+.hero, .quote, .call-to-action, footer {
     background-color: #1f2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
 .flex-container {
-    width: 1100px;
-    justify-content: space-between;
+    /* width: 1100px; */
+    /* justify-content: space-between; */
 }
 
 button {
@@ -51,17 +52,24 @@ button:hover {
 
 /* *HEADER */
 header {
+    text-align: center;
     height: 100px;
+    background-color: #1f2937;
 }
 
 header h1 {
+    display: inline-block;
     font-size: 24px;
     color: #f9faf8;
+    padding: 20px;
+    margin-right: 300px;
 }
 
 nav {
+    display: inline-block;
     font-size: 18px;
     color: #f9faf8;
+    padding: 20px;
 }
 
 nav a {
@@ -79,31 +87,38 @@ nav a:hover {
 
 /* *HERO SECTION */
 .hero {
+    text-align: center;
     height: 500px;
 }
 
-.hero-copy {
-    width: 50%;
+aside {
+    display: inline-block;
+    text-align: left;
+    width: 500px;
     height: 250px;
+    margin: 100px 0 100px 0;
+
 }
 
-.hero-copy h1 {
+/* Why is container stuck on the botton while image is in middle?? */
+
+.hero img {
+    display: inline-block;
+    object-fit: cover;
+    width: 500px;
+    height: 250px;
+    margin: 100px 0 100px 0;
+}
+
+aside h1 {
     font-family: 'Roboto-Black', sans-serif;
     font-size: 48px;
     color: #f9faf8;
-    padding-right: 60px;
 }
 
-.hero-copy p {
+aside p {
     font-size: 18px;
     color: #e5e7eb;
-    padding-right: 100px;
-}
-
-.hero img {
-    width: 50%;
-    height: 250px;
-    object-fit: cover;
 }
 
 /* *RANDOM_CONTENT SECTION */
