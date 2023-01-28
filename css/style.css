@@ -22,13 +22,8 @@
     font-family: 'Roboto-Regular', sans-serif;
 }
 
-header, .hero, .quote, .call-to-action, footer {
-    background-color: #1f2937;
-}
-
 button {
     background-color: #3882f6;
-    color: #f9faf8;
     font-family: 'Roboto-Black', sans-serif;
     font-size: 18px;
     width: 150px;
@@ -38,8 +33,21 @@ button {
     margin: 20px 0;
 }
 
-button:hover {
-    color:#1f2937;  
+/* *MAIN COLORS */
+header, .hero, .quote, .call-to-action, footer {
+    background-color: #1f2937;
+}
+
+.random-content, button:hover, .random-content figcaption, .quote {
+    color: #1f2937;
+}
+
+.random-content, .call-to-action {
+    background-color: #f9faf8;
+}
+
+button, header h1, nav, nav a:any-link, aside h1, .call-to-action {
+    color: #f9faf8;
 }
 
 /* *HEADER */
@@ -52,23 +60,17 @@ header {
 header h1 {
     display: inline-block;
     font-size: 24px;
-    color: #f9faf8;
     margin-right: 400px;
 }
 
 nav {
     display: inline-block;
     font-size: 18px;
-    color: #f9faf8;
 }
 
 nav a {
     text-decoration: none;
     margin-left: 30px;
-}
-
-nav a:any-link {
-    color: #f9faf8; 
 }
 
 nav a:hover {
@@ -99,7 +101,6 @@ aside {
 aside h1 {
     font-family: 'Roboto-Black', sans-serif;
     font-size: 48px;
-    color: #f9faf8;
 }
 
 aside p {
@@ -111,8 +112,6 @@ aside p {
 .random-content {
     height: 500px;
     text-align: center;
-    background-color: #f9faf8;
-    color: #1f2937;
 }
 
 .random-content h1 {
@@ -138,18 +137,20 @@ aside p {
 
 .random-content figcaption {
     font-size: 18px;
-    color: #1f2937;
     margin: 5px;
 }
 
 /* *QUOTE SECTION */
 .quote {
+    text-align: center;
     height: 500px;
     background-color: #e5e7eb;
-    color: #1f2937;
+    padding: 130px; 
 }
 
 .quote blockquote {
+    display: inline-block;
+    text-align: left;
     width: 790px;
     font-family: 'Roboto-LightItalic', sans-serif;
     font-size: 36px;
@@ -167,19 +168,24 @@ aside p {
 /* *CALL-TO-ACTION SECTION */
 .call-to-action {
     height: 500px;
-    background-color: #f9faf8;
-    color: #f9faf8;
+    text-align: center;
+    padding: 150px; 
 }
 
-.call-to-action .flex-container {
+.call-to-action .container{
+    display: inline-block;
+    text-align: center;
+    width: 1000px;
     height: 170px;
     background-color: #3882f6;
     border-radius: 10px;
+    padding: 50px;
 }
 
 .cta-copy {
+    display: inline-block;
+    text-align: left;
     font-size: 24px;
-    margin-left: 100px;
 }
 
 .cta-copy p {
@@ -189,7 +195,7 @@ aside p {
 
 .call-to-action button {
     border: solid 2px #f9faf8;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .call-to-action button:hover {
@@ -198,6 +204,8 @@ aside p {
 
 /* *FOOTER */
 footer {
+    text-align: center;
     height: 150px;
     color: #e5e7eb;
+    padding: 50px;
 }
