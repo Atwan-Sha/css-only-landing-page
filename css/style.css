@@ -108,7 +108,7 @@ aside p {
     color: #e5e7eb;
 }
 
-/* *RANDOM_CONTENT SECTION */
+/* *RANDOM-CONTENT SECTION */
 .random-content {
     height: 500px;
     text-align: center;
@@ -156,7 +156,7 @@ aside p {
     font-size: 36px;
 }
 
-.quote cite {
+.quote .author {
     display: block;
     font-size: 30px;
     font-style: normal;
@@ -182,20 +182,22 @@ aside p {
     padding: 50px;
 }
 
-.cta-copy {
-    display: inline-block;
+.call-to-action aside {
+    /* display: inline-block; */
+    width: 500px;
+    /* height: 100px; */
     text-align: left;
     font-size: 24px;
 }
 
-.cta-copy p {
+.call-to-action aside p {
     font-size: 18px;
     color: #e5e7eb;
 }
 
 .call-to-action button {
     border: solid 2px #f9faf8;
-    margin-left: 100px;
+    margin: 10px 0 0 100px;   
 }
 
 .call-to-action button:hover {
@@ -209,3 +211,5 @@ footer {
     color: #e5e7eb;
     padding: 50px;
 }
+
+/* Add media queries for responsive design... */
