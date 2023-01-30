@@ -54,7 +54,7 @@ button, header h1, nav, nav a:any-link, aside h1, .call-to-action {
 header {
     text-align: center;
     height: 100px;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 90px 30px 90px;
 }
 
 header h1 {
@@ -117,7 +117,7 @@ aside p {
 .random-content h1 {
     font-family: 'Roboto-Black', sans-serif;
     font-size: 36px;
-    margin: 40px;
+    padding: 40px;
 }
 
 .random-content figure {
@@ -151,7 +151,9 @@ aside p {
 .quote blockquote {
     display: inline-block;
     text-align: left;
-    width: 790px;
+    width: 80%;
+    min-width: 350px;
+    max-width: 790px;
     font-family: 'Roboto-LightItalic', sans-serif;
     font-size: 36px;
 }
@@ -172,10 +174,11 @@ aside p {
     padding: 150px; 
 }
 
-.call-to-action .container{
+.call-to-action .container {
     display: inline-block;
     text-align: center;
-    width: 1000px;
+    width: 80%;
+    max-width: 1000px;
     height: 170px;
     background-color: #3882f6;
     border-radius: 10px;
@@ -183,9 +186,10 @@ aside p {
 }
 
 .call-to-action aside {
-    /* display: inline-block; */
-    width: 500px;
-    /* height: 100px; */
+    width: 60%;
+    max-width: 500px;
+    min-width: 285px;
+    height: 100px;
     text-align: left;
     font-size: 24px;
 }
@@ -213,3 +217,53 @@ footer {
 }
 
 /* Add media queries for responsive design... */
+@media (max-width: 1392px) {
+    .call-to-action button {
+        margin: 10px 0 0 0;  
+    }
+}
+
+@media (max-width: 1220px) {
+    header h1 {
+        margin-right: 50px;
+    }
+    .hero {
+        height: 800px;
+    }
+    .hero aside {
+        margin-bottom: 70px;
+    }  
+}
+
+@media (max-width: 1080px) {
+    .call-to-action .container {
+        height: 250px;
+    }
+    .call-to-action aside {
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 910px) {
+    header {
+        text-align: left;
+        height: 200px;
+    }
+    header h1 {
+        display: block;
+        margin-bottom: 30px;
+    }
+    nav a {
+        display: block;
+        margin-left: 0;
+    }
+    .random-content {
+        height: 800px;
+    }
+    .quote {
+        height: 600px;
+    }
+}
+
+
