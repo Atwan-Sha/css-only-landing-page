@@ -177,10 +177,11 @@ aside p {
 .call-to-action .container {
     display: inline-block;
     text-align: center;
+    background-color: #3882f6;
     width: 80%;
     max-width: 1000px;
+    min-width: 384px;
     height: 170px;
-    background-color: #3882f6;
     border-radius: 10px;
     padding: 50px;
 }
@@ -216,7 +217,7 @@ footer {
     padding: 50px;
 }
 
-/* Add media queries for responsive design... */
+/** Media queries for responsive design */
 @media (max-width: 1392px) {
     .call-to-action button {
         margin: 10px 0 0 0;  
@@ -264,6 +265,39 @@ footer {
     .quote {
         height: 600px;
     }
+    .call-to-action {
+        padding: 150px 120px 150px 120px;
+    }
+    .call-to-action aside {
+        margin: 0;
+    }
 }
+
+@media (max-width: 730px) {
+    .hero {
+        padding: 100px 0 100px 0;
+    }
+    .quote {
+        padding: 130px 10px 130px 10px; 
+    }
+    .call-to-action {
+        padding: 150px 10px 150px 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero aside, .hero img {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+    .random-content {
+        height: 1400px;
+    }
+    /* .blockquote, .container {
+        width: 90%;
+    }*/
+}
+
 
 
